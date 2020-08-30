@@ -2,6 +2,7 @@ export {
   Home,
   Email,
   Search,
+  Repeat,
   ExitToApp,
   LocationOn,
   Notifications,
