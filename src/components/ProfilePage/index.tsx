@@ -10,6 +10,7 @@ import {
   ProfileData,
   LocationIcon,
 } from './styles';
+import Feed from '../Feed';
 
 
 const ProfilePage: React.FC = () => {
@@ -47,6 +48,7 @@ const ProfilePage: React.FC = () => {
         </span>
         </Followage>
       </ProfileData>
+      <Feed />
     </Container>
   );
 }
