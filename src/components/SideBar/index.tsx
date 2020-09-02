@@ -9,6 +9,7 @@ import {
 } from './styles';
 import List from '../List';
 import FollowSuggestion from '../FollowSuggestion';
+import News from '../News';
 
 const SideBar: React.FC = () => {
   return (
@@ -37,8 +38,21 @@ const SideBar: React.FC = () => {
           ]}
         />
         <List
-          title="Talvez você curta"
-          elements={[<h1>Test</h1>, <h1>Test</h1>, <h1>Test</h1>]}
+          title="O que está acontecendo"
+          elements={[
+          <News
+            subject="Assuntos do momento no Brasil"
+            description="Bootcampo da Rocketseat"
+          />,
+          <News
+            subject="Assuntos do momento no Brasil"
+            description="Bootcampo da Rocketseat"
+          />,
+          <News
+            subject="Assuntos do momento no Brasil"
+            description="Bootcampo da Rocketseat"
+          />,
+        ]}
         />
       </Body>
     </Container>
