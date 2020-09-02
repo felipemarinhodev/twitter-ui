@@ -2,10 +2,19 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const News: React.FC = () => {
+interface Props {
+  subject: string;
+  description: string;
+}
+
+const News: React.FC<Props> = ({
+  subject,
+  description
+}) => {
   return (
     <Container>
-
+      <span>{subject}</span>
+      <strong>{description}</strong>
     </Container>
   );
 }
